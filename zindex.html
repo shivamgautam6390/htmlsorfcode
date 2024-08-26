@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexing</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+        
+        #box1 {
+            position: absolute;
+            z-index: 1;
+            overflow: hidden;
+            background: yellow;
+            animation-name: myanimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        #box2 {
+            position: relative;
+            background: blue;
+        }
+        
+        @keyframes myanimation {
+            0% {
+                background: red;
+                left: 0;
+                top: 0;
+            }
+            50% {
+                background: green;
+                left: 300px;
+                top: 0px;
+            }
+            100% {
+                background: yellow;
+                left: 400px;
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            box1
+        </div>
+        <div class="box" id="box2">
+            box2
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

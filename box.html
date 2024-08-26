@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .outer,
+        .outer1 {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 1px solid black;
+            margin: 100px auto;
+            padding: 20px;
+            box-sizing: content-box;
+            overflow: scroll;
+            display: inline-block;
+            text-indent: 3cm;
+        }
+        
+        .outer1 {
+            margin-left: 20px;
+            background: yellow;
+            padding-left: 40px;
+            color: red;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        
+        body {
+            background: url(image/1.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla quod exercitationem voluptas ratione natus eaque perspiciatis deserunt dignissimos. Sint veritatis temporibus et neque animi quod excepturi, eligendi accusamus perferendis? Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Culpa ipsum, animi ex fugiat in quod eum minima autem adipisci voluptates illum expedita, fuga, voluptatibus odio quo est consectetur hic dicta?
+    </div>
+    <div class="outer1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates et nesciunt natus soluta adipisci voluptatum, libero aliquid vero nostrum, iusto doloribus provident nam dolorum corporis ea maxime dicta, exercitationem harum distinctio inventore esse
+        facilis illo ipsum! Nostrum, dignissimos iure impedit id eveniet eaque, voluptates numquam ipsam, nihil deleniti cum dolorum!
+    </div>
+
+
+
+</body>
+
+</html>
